@@ -1,17 +1,17 @@
 ---
 ulm_translation_engine:
   variables:
-    ulm_translation_back: "[[[ return hass.resources[hass['language']]['ui.common.back']; ]]]"
-    ulm_translation_brightness: "[[[ return hass.resources[hass['language']]['ui.card.light.brightness']; ]]]"
-    ulm_translation_color_temperature: "[[[ return hass.resources[hass['language']]['ui.card.light.color_temperature']; ]]]"
-    ulm_translation_status: "[[[ return hass.resources[hass['language']]['ui.dialogs.more_info_control.vacuum.status']; ]]]"
-    ulm_translation_scenes: "[[[ return hass.resources[hass['language']]['ui.dialogs.quick-bar.commands.reload.scene']; ]]]"
-    ulm_translation_source: "[[[ return hass.resources[hass['language']]['ui.card.media_player.source']; ]]]"
-    ulm_translation_history: "[[[ return hass.resources[hass['language']]['ui.dialogs.more_info_control.history']; ]]]"
-    ulm_translation_close_cover: "[[[ return hass.resources[hass['language']]['ui.dialogs.more_info_control.cover.close_cover']; ]]]"
-    ulm_translation_stop_cover: "[[[ return hass.resources[hass['language']]['ui.dialogs.more_info_control.cover.stop_cover']; ]]]"
-    ulm_translation_open_cover: "[[[ return hass.resources[hass['language']]['ui.dialogs.more_info_control.cover.open_cover']; ]]]"
-    ulm_translation_more_options: "[[[ return hass.resources[hass['language']]['ui.panel.lovelace.editor.edit_card.options']; ]]]"
+    ulm_translation_back: "[[[ return hass.localize('ui.common.back') || 'Back'; ]]]"
+    ulm_translation_brightness: "[[[ return hass.localize('ui.card.light.brightness') || 'Brightness'; ]]]"
+    ulm_translation_color_temperature: "[[[ return hass.localize('ui.card.light.color_temperature') || 'Color temperature'; ]]]"
+    ulm_translation_status: "[[[ return hass.localize('ui.dialogs.more_info_control.vacuum.status') || 'Status'; ]]]"
+    ulm_translation_scenes: "[[[ return hass.localize('ui.dialogs.quick-bar.commands.reload.scene') || 'Scenes'; ]]]"
+    ulm_translation_source: "[[[ return hass.localize('ui.card.media_player.source') || 'Source'; ]]]"
+    ulm_translation_history: "[[[ return hass.localize('ui.dialogs.more_info_control.history') || 'History'; ]]]"
+    ulm_translation_close_cover: "[[[ return hass.localize('ui.card.cover.close_cover') || 'Close'; ]]]"
+    ulm_translation_stop_cover: "[[[ return hass.localize('ui.card.cover.stop_cover') || 'Stop'; ]]]"
+    ulm_translation_open_cover: "[[[ return hass.localize('ui.card.cover.open_cover') || 'Open'; ]]]"
+    ulm_translation_more_options: "[[[ return hass.localize('ui.panel.lovelace.editor.edit_card.options') || 'Options'; ]]]"
     ulm_active_state: >
       [[[
         if (typeof(entity) !== 'undefined' && entity !== undefined){
