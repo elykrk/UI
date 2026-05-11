@@ -78,24 +78,30 @@ minimalist-desktop:
       # media player
       mini-media-player-accent-color: "var(--google-blue)"
     dark:
-      # text
-      primary-text-color: "#DDDDDD"
+      primary-text-color: "#FFFFFF"
+      secondary-text-color: 'var(--google-yellow)'
+
       # main interface colors
-      primary-color: "#89B3F8"
-      google-red: "#F18B82"
-      google-green: "#80C994"
-      google-yellow: "#FCD663"
-      google-blue: "#89B3F8"
-      google-violet: "#BB86FC"
-      google-grey: "#BBBBBB"
-      color-red: "241, 139, 130"
-      color-green: "128, 201, 148"
-      color-yellow: "252, 214, 99"
-      color-blue: "137, 179, 248"
-      color-theme: "221,221,221"
-      color-purple: "102, 31, 255"
+      primary-color: "#2980b9" 
+      disabled-color: '#bdbdbd'
+      google-red: "#b83829" 
+      google-green: "#70a03c" 
+      google-yellow: "#b58e31" 
+      google-blue: "#2980b9" 
+      google-purple: "#8d47b5" 
+      google-grey: "#BBBBBB" 
+      google-pink: "#a60d41"
+      google-amber: '#ffc107'
+      color-red: "184, 56, 41" 
+      color-green: "112, 160, 60" 
+      color-yellow: "181, 142, 49" 
+      color-blue: "41, 128, 185" 
+      color-purple: "141, 71, 181"
       color-grey: "187, 187, 187"
-      color-pink: "233, 30, 99"
+      color-pink: "166, 13, 65"
+      color-amber: '255, 193, 7'
+      color-theme: "255, 255, 255" 
+
       color-background-yellow: "var(--color-yellow)"
       color-background-blue: "var(--color-blue)"
       color-background-green: "var(--color-green)"
@@ -112,16 +118,22 @@ minimalist-desktop:
       # floating button text color
       mdc-theme-on-secondary: "var(--card-background-color)"
       # background and sidebar
+      ###### Uncomment below for dark gray background and comment out matching lines above
       card-background-color: "#1D1D1D"
       primary-background-color: "#121212"
       secondary-background-color: "#121212"
+      # card-background-color: "#292929" #darker was og slate background
+      # primary-background-color: "#222222" #lighter was og slate background
+      # secondary-background-color: "#222222" was og slate background
       # header
       app-header-text-color: "var(--primary-text-color)"
-      app-header-background-color: "var(--primary-background-color)"
+      app-header-background-color: "#2980b9"
       paper-tabs-selection-bar-color: "var(--primary-text-color)"
+      ha-card-header-color: "var(--primary-text-color)"
       # Sidebar
       sidebar-selected-text-color: "rgb(var(--color-blue))"
       sidebar-selected-icon-color: "rgb(var(--color-blue))"
+      sidebar-icon-color: '#777777'
       # Slider
       slider-color: "rgb(var(--color-blue))"
       slider-bar-color: "rgba(var(--color-blue),0.38)"
@@ -131,3 +143,65 @@ minimalist-desktop:
       mini-media-player-accent-color: "var(--google-blue)"
       # Journal
       state-icon-color: "rgb(var(--color-theme))"
+
+      #input selector background fill colors
+      input-fill-color: 'var(--card-background-color)'
+      input-disabled-fill-color: 'var(--card-background-color)'
+
+      #Added after 2023.2 State Colors
+
+      state-active-color: var(--google-yellow)
+      state-inactive-color: var(--google-grey)
+      state-unavailable-color: var(--disabled-color)
+      state-alarm_control_panel-armed_away-color: var(--google-green)
+      state-alarm_control_panel-armed_custom_bypass-color: var(--google-green)
+      state-alarm_control_panel-armed_home-color: var(--google-green)
+      state-alarm_control_panel-armed_night-color: var(--google-green)
+      state-alarm_control_panel-armed_vacation-color: var(--google-green)
+      state-alarm_control_panel-arming-color: var(--google-amber)
+      state-alarm_control_panel-disarming-color: var(--google-amber)
+      state-alarm_control_panel-pending-color: var(--google-amber)
+      state-alarm_control_panel-triggered-color: var(--google-red)
+      state-alert-off-color: var(--google-grey)
+      state-alert-on-color: var(--google-red)
+      state-binary_sensor-active-color: var(--google-yellow)
+      state-binary_sensor-battery-on-color: var(--google-red)
+      state-binary_sensor-carbon_monoxide-on-color: var(--google-red)
+      state-binary_sensor-gas-on-color: var(--google-red)
+      state-binary_sensor-heat-on-color: var(--google-red)
+      state-binary_sensor-lock-on-color: var(--google-red)
+      state-binary_sensor-moisture-on-color: var(--google-red)
+      state-binary_sensor-problem-on-color: var(--google-red)
+      state-binary_sensor-safety-on-color: var(--google-red)
+      state-binary_sensor-smoke-on-color: var(--google-red)
+      state-binary_sensor-sound-on-color: var(--google-red)
+      state-binary_sensor-tamper-on-color: var(--google-red)
+      state-climate-auto-color: var(--google-green)
+      state-climate-cool-color: var(--google-blue)
+      state-climate-dry-color: var(--google-amber)
+      state-climate-fan_only-color: var(--google-purple)
+      state-climate-heat-color: var(--google-red)
+      state-climate-heat-cool-color: var(--google-yellow)
+      state-cover-active-color: var(--google-yellow)
+      state-device_tracker-active-color: var(--google-grey)
+      state-device_tracker-home-color: var(--google-green)
+      state-fan-active-color: var(--google-blue)
+      state-humidifier-active-color: var(--google-blue)
+      state-light-active-color: var(--google-yellow)
+      state-lock-jammed-color: var(--google-red)
+      state-lock-locked-color: var(--google-green)
+      state-lock-pending-color: var(--google-amber)
+      state-lock-unlocked-color: var(--google-red)
+      state-media_player-active-color: var(--google-blue)
+      state-person-active-color: var(--google-grey)
+      state-person-home-color: var(--google-green)
+      state-plant-active-color: var(--google-red)
+      state-siren-active-color: var(--google-red)
+      state-sun-above_horizon-color: var(--google-amber)
+      state-sun-below_horizon-color: var(--google-purple)
+      state-switch-active-color: var(--google-yellow)
+      state-update-active-color: var(--google-amber)
+      state-vacuum-active-color: var(--google-blue)
+      state-sensor-battery-high-color: var(--google-green)
+      state-sensor-battery-low-color: var(--google-red)
+      state-sensor-battery-medium-color: var(--google-amber)
